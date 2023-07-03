@@ -6,8 +6,8 @@
 
 
 // Replace with your network credentials
-const char* ssid     = "YOUR WIFI-NAME";
-const char* password = "123456";
+const char* ssid     = "MFA-STAFF";
+const char* password = "12345678";
 
 // REPLACE with your Domain name and URL path or IP address with path
 const char* serverName = "https://iot.mpesafoundationacademy.ac.ke/post-esp-data.php";
@@ -19,8 +19,8 @@ String apiKeyValue = "tPmAT5Ab3j7F9";
 String sensorName = "TDS Sensor";
 String sensorLocation = "MFA";
 String value1 = "50";
-String value2 = "50";
-String value3 = "50";
+String value2 = "40";
+String value3 = "10";
 
 void setup() {
   Serial.begin(115200);
@@ -57,8 +57,8 @@ void loop() {
                              "&sensor=" + sensorName  +
                              "&location=" + sensorLocation +
                              "&value1=" + value1  +
-                             "&value1=" + value2  +
-                             "&value1=" + value3  +
+                             "&value2=" + value2  +
+                             "&value3=" + value3  +
                              "";
     Serial.println(httpRequestData);
 
