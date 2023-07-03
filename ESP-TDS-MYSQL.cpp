@@ -4,11 +4,11 @@
 #include <Wire.h>
 
 // Replace with your network credentials
-const char* ssid = "KENYA";
+const char* ssid = "SMART_TV";
 const char* password = "12345678";
 
 // REPLACE with your Domain name and URL path or IP address with path
-const char* serverName = "https://iot.yoursitename.com/post-esp-data.php";
+const char* serverName = "https://iot.mpesafoundationacademy.ac.ke/post-esp-data.php";
 
 // Keep this API Key value to be compatible with the PHP code provided in the project page.
 // If you change the apiKeyValue value, the PHP file /post-esp-data.php also needs to have the same key
@@ -17,7 +17,7 @@ String apiKeyValue = "tPmAT5Ab3j7F9";
 String sensorName = "TDS Sensor";
 String sensorLocation = "MFA";
 String safety = "Safe";
- int temperature = random(19,24); // Generate a random number between 24 and 25
+
 
 const int analogPin = 34; // Analog pin connected to the TDS sensor
 
@@ -36,6 +36,9 @@ void setup() {
 }
 
 void loop() {
+  
+   int temperature = random(19,23); // Generate a random number between 24 and 25
+   
   // Check WiFi connection status
   if (WiFi.status() == WL_CONNECTED) {
     WiFiClientSecure *client = new WiFiClientSecure;
