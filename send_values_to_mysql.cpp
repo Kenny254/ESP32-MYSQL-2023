@@ -10,7 +10,7 @@ const char* ssid     = "MFA-STAFF";
 const char* password = "12345678";
 
 // REPLACE with your Domain name and URL path or IP address with path
-const char* serverName = "https://iot.mpesafoundationacademy.ac.ke/post-esp-data.php";
+const char* serverName = "https://yoursite.com/post-esp-data.php";
 
 // Keep this API Key value to be compatible with the PHP code provided in the project page. 
 // If you change the apiKeyValue value, the PHP file /post-esp-data.php also needs to have the same key 
