@@ -2,17 +2,10 @@
 <html>
 <head>
   <title>Sensor Data</title>
-  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/dataTables.bootstrap5.min.css">
-  <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
-  <script src="https://cdn.datatables.net/1.10.25/js/dataTables.bootstrap5.min.js"></script>
-  <script>
-    $(document).ready(function() {
-      $('#sensorData').DataTable();
-    });
-  </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 </head>
 <body>
-  <table id="sensorData" class="table table-striped">
+  <table id="sensorData" class="table table-striped table-bordered">
     <thead>
       <tr>
         <th>ID</th>
@@ -53,34 +46,25 @@
             $row_value2 = $row["value2"];
             $row_value3 = $row["value3"];
             $row_reading_time = $row["reading_time"];
-            // Uncomment to set timezone to -1 hour (you can change 1 to any number)
-            //$row_reading_time = date("Y-m-d H:i:s", strtotime("$row_reading_time - 1 hours"));
-
-            // Uncomment to set timezone to +4 hours (you can change 4 to any number)
-            //$row_reading_time = date("Y-m-d H:i:s", strtotime("$row_reading_time + 4 hours"));
-
+            
             echo '<tr>
-        <td>' . $row_id . '</td>
-        <td>' . $row_sensor . '</td>
-        <td>' . $row_location . '</td>
-        <td>' . $row_value1 . '</td>
-        <td>' . $row_value2 . '</td>
-        <td>' . $row_value3 . '</td>
-        <td>' . (($row_value1 > 100) ? "Medium" : (($row_value1 > 300) ? "High" :  "Low")) . '</td>
-        <td>' . $row_reading_time . '</td>
-      </tr>';
+              <td>' . $row_id . '</td>
+              <td>' . $row_sensor . '</td>
+              <td>' . $row_location . '</td>
+              <td>' . $row_value1 . '</td>
+              <td>' . $row_value2 . '</td>
+              <td>' . $row_value3 . '</td>
+              <td>' . (($row_value1 > 100) ? "Medium" : (($row_value1 > 300) ? "High" :  "Low")) . '</td>
+              <td>' . $row_reading_time . '</td>
+            </tr>';
           }
           $result->free();
         }
         $conn->close();
       ?>
-       
     </tbody>
   </table>
-  <script>
-    $(document).ready(function() {
-      $('#sensorData').DataTable();
-    });
-  </script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
