@@ -18,9 +18,10 @@
         <th>ID</th>
         <th>Sensor</th>
         <th>Location</th>
-        <th>Value 1</th>
-        <th>Value 2</th>
-        <th>Value 3</th>
+        <th>TDS Value</th>
+        <th>Temperature</th>
+        <th>Analog Reading</th>
+        <th>Status</th>
         <th>Timestamp</th>
       </tr>
     </thead>
@@ -28,11 +29,11 @@
       <?php
         $servername = "localhost";
         // REPLACE with your Database name
-        $dbname = "";
+        $dbname = "mpesaacademy_IoT2023";
         // REPLACE with Database user
-        $username = "";
+        $username = "mpesaacademy_IoT2023";
         // REPLACE with Database user password
-        $password = "";
+        $password = "W9ho!3TdKcd$";
 
         // Create connection
         $conn = new mysqli($servername, $username, $password, $dbname);
@@ -59,14 +60,15 @@
             //$row_reading_time = date("Y-m-d H:i:s", strtotime("$row_reading_time + 4 hours"));
 
             echo '<tr>
-                    <td>' . $row_id . '</td>
-                    <td>' . $row_sensor . '</td>
-                    <td>' . $row_location . '</td>
-                    <td>' . $row_value1 . '</td>
-                    <td>' . $row_value2 . '</td>
-                    <td>' . $row_value3 . '</td>
-                    <td>' . $row_reading_time . '</td>
-                  </tr>';
+        <td>' . $row_id . '</td>
+        <td>' . $row_sensor . '</td>
+        <td>' . $row_location . '</td>
+        <td>' . $row_value1 . '</td>
+        <td>' . $row_value2 . '</td>
+        <td>' . $row_value3 . '</td>
+        <td>' . (($row_value1 > 100) ? "Medium" : (($row_value1 > 300) ? "High" :  "Low")) . '</td>
+        <td>' . $row_reading_time . '</td>
+      </tr>';
           }
           $result->free();
         }
