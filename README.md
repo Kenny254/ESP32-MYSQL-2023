@@ -2,6 +2,10 @@ The Water Safety Management System (IoT) 2023
 
 The Water Safety Management System is an innovative solution designed to ensure the safety of water in various settings, including residential, institutional, and public applications. By combining IoT technology, a reliable water quality sensor, an API for data integration, and a user-friendly web application, this system provides real-time monitoring and management of water safety.
 
+![Uploading Screenshot 2023-07-04 at 01.42.26.png…]()
+
+
+
 Key components of the system include:
 
 ESP32: The ESP32 is a powerful microcontroller with built-in Wi-Fi and Bluetooth capabilities, making it ideal for IoT applications. It serves as the central hub for data collection, processing, and communication within the system.
