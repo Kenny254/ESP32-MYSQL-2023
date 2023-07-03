@@ -30,3 +30,8 @@ Installation and Usage: Detailed installation instructions and usage guidelines 
 Disclaimer: This system is provided as an open-source project and does not guarantee absolute water safety. Users are responsible for validating and interpreting the collected data according to their specific requirements and regulations.
 
 Note: Remember to include any additional relevant information or specific instructions for running the system in the repository's README file.
+
+
+By 
+Ken Ronoh
+Embed Engineer, Educator
