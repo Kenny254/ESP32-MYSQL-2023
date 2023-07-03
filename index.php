@@ -28,11 +28,11 @@
       <?php
         $servername = "localhost";
         // REPLACE with your Database name
-        $dbname = "mpesaacademy_IoT2023";
+        $dbname = "";
         // REPLACE with Database user
-        $username = "mpesaacademy_IoT2023";
+        $username = "";
         // REPLACE with Database user password
-        $password = "W9ho!3TdKcd$";
+        $password = "";
 
         // Create connection
         $conn = new mysqli($servername, $username, $password, $dbname);
