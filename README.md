@@ -1,8 +1,5 @@
 Water Safety System (IoT) 2023 
 
-<img width="574" alt="Screenshot 2023-07-04 at 19 39 25" src="https://github.com/Kenny254/ESP32-MYSQL-2023/assets/22868045/736388f6-b049-4d48-889f-62bfbd24a40f">
-
-
 Description: This repository contains the code and resources for a Water Safety Management System using IoT technologies. The system utilizes an ESP32 microcontroller, an Analog TDS Sensor for water quality measurement, an API for data integration, and a web application for monitoring and management. It provides real-time monitoring, alerts, historical analysis, and reporting capabilities for ensuring water safety in residential, institutional, and public applications.
 
 <img width="1440" alt="Screenshot 2023-07-04 at 19 05 17" src="https://github.com/Kenny254/ESP32-MYSQL-2023/assets/22868045/65933a62-c9c5-4908-bfec-996955fd5856">
